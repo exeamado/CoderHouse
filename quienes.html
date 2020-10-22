@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre los integrantes del proyecto Tipijamas">
+    <meta name="keywords" content="fiesta, infantil, carpas, candybar, Caleta olivia, santa cruz">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Quienes Somos</title>
+</head>
+<body>
+    <header>
+        <div class="header" id="header">
+            <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo de Tipijamas"width="150px" height="150px"></a>
+            <strong><h1 id="tematicas">TIPIJAMAS</h1></strong>
+            </div>
+            
+            <nav class="menu">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html#header">Temáticas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="combos.html">Nuestros Combos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quienes.html">Quienes Somos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </div>
+    </header>
+    <section>
+        <div class="tituloSeccion">
+            <h2>Conocenos un poco mas</h2>
+        </div>
+        <div class="cuerpoSeccion">
+            <img class="izquierda" src="cris_foto.jpg" alt="foto de Cristina, creadora de Tipijamas">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora sequi ex, provident quae ea ad ipsam minus aperiam possimus alias deleniti cupiditate perferendis corrupti doloribus. Voluptatum doloribus qui expedita placeat.</p>
+        </div>
+        <div class="cuerpoSeccion">
+            <img class="derecha"src="gere_foto.jpg" alt="foto de Garazi, colaboradora">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quidem voluptatem obcaecati voluptates, libero modi, adipisci repudiandae quo ut inventore nisi distinctio, accusantium a iusto voluptatum dolor repellendus fugit corrupti?</p>
+        </div>
+    </section>
+    <section>
+        <div class="contactos">
+            <h3 id="contactos">Contactos</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nombre_apellido">Nombre y Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre y apellido" name="nombre_apellido" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email de contacto</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="tipo_tematicas">Temáticas disponibles: </label>
+                        <input type="checkbox" name="tematica_heroes"> Heroes
+                        <input type="checkbox" name="tematica_princesas"> Princesas
+                        <input type="checkbox" name="tematica_halloween"> Halloween
+                </div>
+                <div class="form-group">
+                    <div class="dropdown">       
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Edad que cumple:</button>
+                        <div class="dropdown-menu" name="edad">
+                            <a class="dropdown-item" value="4_a_7" href="#">De 4 a 7 años</a>
+                            <option class="dropdown-item" value="8_a_10" href="#">De 8 a 10 años</option>
+                            <option class="dropdown-item" value="Mayor_10" href="#">Mayores de 10</option>
+                        </div>
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Contactanos
+                    </button>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h4 class="modal-title">¡Gracias por tu consulta!</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                Te contestaremos a la brevedad para responder todas tus dudas
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+            </form>
+            <div class="quienes">
+                <a href="quienes.html">Conocenos un poco más</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.facebook.com/tipijamas_-100501658438597/?ref=page_internal"><img src="fb.svg" alt="icono Facebook"></a>
+        <a href="https://www.instagram.com/tipijamas_/"><img src="ig.svg" alt="icono Instagram"></a>
+        <a href="#"><img src="tik.svg" alt="icono Tik Tok"></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
