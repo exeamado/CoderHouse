@@ -1,0 +1,44 @@
+.tituloSeccion {
+  color: #EF6F6C;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.cuerpoSeccion {
+  display: inline-block;
+  background-color: lavender;
+  border: solid 1px #A8A6DE;}
+
+.cuerpoSeccion_izquierda, .cuerpoSeccion_derecha {
+  float: left;
+  margin-right: 15px;
+  height: 300px;
+  border-radius: 100%; }
+
+.cuerpoSeccion_derecha {
+  float: right;
+  margin-left: 15px; }
+
+.cuerposeccion p {
+  padding-top: 35px;
+  font-size: 30px; }
+
+.linksSitio {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 5px; }
+
+.linksSitio_texto {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 15px;
+  font-family: 'Grandstander', cursive;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.tituloContactos {
+  color: #EF6F6C;
+  display: flex;
+  margin-left: 15px; }

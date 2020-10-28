@@ -1,0 +1,64 @@
+$colorTitulo: #EF6F6C;
+$bordes: solid 1px #A8A6DE;
+
+.tituloSeccion{
+    color: $colorTitulo;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cuerpoSeccion{
+    display: inline-block;
+    border: $bordes;
+    background-color: lavender;
+}
+
+.cuerpoSeccion_izquierda{
+    float: left;
+    margin-right: 15px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.cuerpoSeccion_derecha{
+    @extend .cuerpoSeccion_izquierda;
+    float: right;
+    margin-left: 15px;
+}
+
+.cuerposeccion p{
+    padding-top: 35px;
+    font-size: 30px;       
+ }
+
+ @mixin links ($v1, $v2) {
+     margin: $v1;
+     padding: $v2;
+ }
+
+ .linksSitio{
+     display: flex;
+     justify-content: center;
+     @include links(15px, 5px);
+ }
+
+ @mixin textoLinks ($v3, $v4, $v5) {
+     text-decoration: $v3;
+     font-size: $v4;
+     margin: $v5;
+ }
+
+ .linksSitio_texto{
+     @include textoLinks(none, 22px, 15px);
+     font-family: 'Grandstander', cursive;
+     text-transform: uppercase;
+    font-weight: bold;  
+ }
+
+ .tituloContactos{
+     color: $colorTitulo;   
+     display: flex;
+     margin-left: 15px;
+ }
