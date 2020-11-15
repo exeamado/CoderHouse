@@ -1,10 +1,9 @@
 
+@media (min-width: 769px){
 
 body{
   background-color: #F8EBFF;
 }
-
-
 
 .header {
     display: flex;
@@ -12,59 +11,92 @@ body{
     flex-direction: row; 
     justify-content: center;
     background-color: #A8A6DE;
-    border-radius: 1%;
+    align-items: center;
 }
 
-.header h1{
-    color:#F8EBFF;  
-  }
 
-  .header nav ul{
+
+.logo img{
+  width: 150px;
+  height: 150px;
+  margin: 5px 0 5px 0;
+}
+
+
+  .header nav ul{  
+      display: flex; flex-flow: row nowrap;
+      margin-bottom: 10px;
+      align-items: stretch;
       text-align: center;
-      display: flex; flex-wrap: wrap; flex-direction: row;
-      align-items: center;
-      align-content: center;
-      margin: 25px;
 
   }
   .header nav ul li{
+      align-items: center;
       background-color: #EF6F6C;
       list-style-type: none;
       display: inline;
       border: 0.5px solid white;
-      padding: 15px;
+      padding: 3px;
       border-radius: 10%;
       
   }
+
+  .nav-item{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+
+  }
+
+  .header nav ul li:hover, .header nav ul li a:hover{
+    background-color: #F8EBFF;
+    color: #EF6F6C;
+  }
+
   .header nav ul li a{
+    
     color: #F8EBFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-decoration: none;
-    padding: 10px;
+    
 
   }
 
-  .carrousel {    
+  .header .navbar{
+    display: none;
+  }
+
+  #carrousel {    
       flex-wrap: wrap;
       display: flex;  flex-direction: row; 
       justify-content: center;
       border-bottom-style: dashed; 
   }
 
-  .carrousel p{
-      font-size: 25px;
+  .carroselServicios{
+    display: none;
+  }
+
+  .servicios img{
+    height: 200px;
+  }
+
+  .combos2{
+    display: none !important;
+  }
+}
+  #carrousel p{
+      font-size: 18px;
       font-family: 'Grandstander', cursive;
       color: #EF6F6C;
       margin: 0px 35px 20px 35px;
       padding: 0px 15px 0px 15px;
   }
 
-  
-
   .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
   }
   
   .servicios{
@@ -76,9 +108,7 @@ body{
     
   }
 
-  .servicios img{
-    height: 200px;
-  }
+  
 
   .servicios .imagenesServicios{
     display: grid;
@@ -88,7 +118,8 @@ body{
   }
   .servicios h3{
     color:#EF6F6C;
-    display: flex; 
+    display: flex;
+    margin-bottom: 30px; 
   }
   
   .servicios table{
@@ -97,32 +128,12 @@ body{
       text-align: center;
   }
 
-  /* .servicios .link{
-      display: flex;
-      justify-content: center;
-      margin: 15px;
-      padding: 5px;
-  }
-
-  .servicios a{
-    text-decoration: none;
-    font-size: 22px;;
-    margin: 15px;
-    font-family: 'Grandstander', cursive;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
   
   .contactos{
     display: flex; flex-wrap: nowrap; flex-direction: column; 
     justify-content: center;
   }
   
-  /* .contactos h3{
-      color:#EF6F6C;
-      display: flex;
-      margin-left: 15px;
-  } */
   
   .contactos form{
       display: flex;
@@ -140,58 +151,49 @@ body{
     color: #EF6F6C;
   }
 
-  /* .contactos .quienes{
-    margin: 15px;
-    text-align: center;
-  }
-
-  .contactos .quienes a{
-      text-decoration: none;
-      font-family: 'Grandstander', cursive;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 22px
-  } */
-
-  .combos{
+  
+  .combos, .combos2{
       border-style: outset;
       background-color: lavender;
-      text-align: center;
       display: grid;
       grid-template-columns: 33% 33% 33%;
-     
+     margin: 0 20px 0 20px;
+     justify-items: center;
+     align-items: center;
       
   }
 
-  /* .combos h3{
-    color:#EF6F6C;
-      font-size: 30px;
-      text-align: center;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 10px;
-      grid-column: 1/4;
-  } */
 
-  .combos img{
-    height: 300px;
-    margin: 0 20px 0 20px;
+  .packsImg, #packsImg1, #packsImg2, #packsImg3{
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .combos .packsImg{
+    align-content: center;
+    border-color: red;
+    margin-left: 10px;
+    
   }
 
   .combos h4{
     font-family: 'Grandstander', cursive;
-    font-size: 20px;
+    font-size: 30px;
     color: #EF6F6C;
-    text-align: left ;
-    text-align: center;
+    text-align: left;
     
   }
 
-  .combos span{
+  .combos span, .combos2 span{
     font-family: 'Grandstander', cursive;
     color: #EF6F6C;
     text-align: left ;
-    
+  }
+
+  .combos span img, .combos2 span img{
+    height: 20px;
+    width: 20px;
   }
 
   footer{
@@ -199,47 +201,170 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
+    margin-bottom: 20px;
   }
 
   footer img{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     padding: 15px;
-    
-    
+    transition: 1s; 
+  }
+
+  footer img:hover{
+    height: 150px;
+    width: 150px;
   }
 
   @media (max-width:768px){
-  
-    .header h1{
-      display: none;  
+
+    .header h1, .header .logo, .header .nav{
+      display: none;
     }
-    .header nav ul{
-      margin: 10px 0 10px 0;
+
+    .header .navbar img{
+      width: 100px;
+      height: 100px;
     }
-    .header nav ul li{
-      padding: 0;
+
+    .header .navbar {
+      background-color: #A8A6DE !important;
+      width: 100% !important;
     }
-    .header nav ul li a{
-      color: #F8EBFF;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 13px;
-      text-decoration: none;
-      padding: 5px;
+
+    .nav-link{
+      color: #F8EBFF !important;
     }
-    .carrousel p{
+
+    .nav-item :hover{
+      color: #EF6F6C !important;
+      background-color: #F8EBFF;
+    }
+
+   
+    #carrousel p{
       font-size: 15px;
       font-family: 'Grandstander', cursive;
       color: #EF6F6C;
       margin: 0px 35px 20px 35px;
       padding: 0px 15px 0px 15px;
+      
+    }
+
+    .servicios{
+      border-top-style: dashed;
     }
     .servicios .imagenesServicios{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      justify-items: center;
+      display: none;
     }
+    .combos{
+      display: none;
+    }
+
+    
+
+    .combos2 #packsImg1{
+      grid-area: packsImg1;
+    }
+
+    .combos2 #packsImg2{
+      grid-area: packsImg2;
+    }
+
+    .combos2 #packsImg3{
+      grid-area: packsImg3;
+    }
+
+    .combos2 #s1-1{
+      grid-area: s1-1;
+    }
+
+    .combos2 #s2-1{
+      grid-area: s2-1;
+    }
+
+    .combos2 #s3-1{
+      grid-area: s3-1;
+    }
+
+    .combos2 #s4-1{
+      grid-area: s4-1;
+    }
+
+    .combos2 #s5-1{
+      grid-area: s5-1;
+    }
+
+
+    .combos2 #s1-2{
+      grid-area: s1-2;
+    }
+
+    .combos2 #s2-2{
+      grid-area: s2-2;
+    }
+
+    .combos2 #s3-2{
+      grid-area: s3-2;
+    }
+
+    .combos2 #s4-2{
+      grid-area: s4-2;
+    }
+
+    .combos2 #s5-2{
+      grid-area: s5-2;
+    }
+
+    .combos2 #s1-3{
+      grid-area: s1-3;
+    }
+
+    .combos2 #s2-3{
+      grid-area: s2-3;
+    }
+
+    .combos2 #s3-3{
+      grid-area: s3-3;
+    }
+
+    .combos2 #s4-3{
+      grid-area: s4-3;
+    }
+
+    .combos2 #s5-3{
+      grid-area: s5-3;
+    }
+
+
+    .combos2{
+      display: grid;
+      grid-template-areas: 
+      "packsImg1 s1-1 s1-1"
+      "packsImg1 s2-1 s2-1"
+      "packsImg1 s3-1 s3-1"
+      "packsImg1 s4-1 s4-1"
+      "packsImg1 s5-1 s5-1"
+
+      "packsImg2 s1-2 s1-2"
+      "packsImg2 s2-2 s2-2"
+      "packsImg2 s3-2 s3-2"
+      "packsImg2 s4-2 s4-2"
+      "packsImg2 s5-2 s5-2"
+      
+      "packsImg3 s1-3 s1-3"
+      "packsImg3 s2-3 s2-3"
+      "packsImg3 s3-3 s3-3"
+      "packsImg3 s4-3 s4-3"
+      "packsImg3 s5-3 s5-3"
+      ;
+      
+      justify-items: center;
+      align-items: center;
+
+
+    }
+
 
     .contactos form{
       padding: 5px;
@@ -248,6 +373,129 @@ body{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 13px;
   }
+
+  .form-group .dropdown-item, .dropdown button, .form-group .form-control {
+    font-size: 12px;
+  }
   
-    
+  .form-group .label .input{
+    display: block;
+  }
+  }
+
+  @media(max-width:600px){
+
+    .combos{
+      display: none;
+    }
+
+    .combos2 #packsImg1{
+      grid-area: packsImg1;
+    }
+
+    .combos2 #packsImg2{
+      grid-area: packsImg2;
+    }
+
+    .combos2 #packsImg3{
+      grid-area: packsImg3;
+    }
+
+    .combos2 #s1-1{
+      grid-area: s1-1;
+    }
+
+    .combos2 #s2-1{
+      grid-area: s2-1;
+    }
+
+    .combos2 #s3-1{
+      grid-area: s3-1;
+    }
+
+    .combos2 #s4-1{
+      grid-area: s4-1;
+    }
+
+    .combos2 #s5-1{
+      grid-area: s5-1;
+    }
+
+
+    .combos2 #s1-2{
+      grid-area: s1-2;
+    }
+
+    .combos2 #s2-2{
+      grid-area: s2-2;
+    }
+
+    .combos2 #s3-2{
+      grid-area: s3-2;
+    }
+
+    .combos2 #s4-2{
+      grid-area: s4-2;
+    }
+
+    .combos2 #s5-2{
+      grid-area: s5-2;
+    }
+
+    .combos2 #s1-3{
+      grid-area: s1-3;
+    }
+
+    .combos2 #s2-3{
+      grid-area: s2-3;
+    }
+
+    .combos2 #s3-3{
+      grid-area: s3-3;
+    }
+
+    .combos2 #s4-3{
+      grid-area: s4-3;
+    }
+
+    .combos2 #s5-3{
+      grid-area: s5-3;
+    }
+
+
+    .combos2{
+      display: grid;
+      border-style: outset;
+      background-color: lavender;
+      grid-template-columns: 1fr;
+      margin: 0 20px 0 20px;
+      font-size: 13px;
+      row-gap:10px ;
+
+      grid-template-areas: 
+      "packsImg1" 
+      "s1-1"
+      "s2-1"
+      "s3-1"
+      "s4-1"
+      "s5-1"
+
+      "packsImg2"
+      "s1-2"
+      "s2-2"
+      "s3-2"
+      "s4-2"
+      "s5-2"
+      
+      "packsImg3"
+      "s1-3"
+      "s2-3"
+      "s3-3"
+      "s4-3"
+      "s5-3"
+      ;
+
+
+    }
+
   }
